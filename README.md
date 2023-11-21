@@ -7,7 +7,8 @@ There are two markdown files:
 * NOTES.md is for longer stuff (often mentioned in this README)...
 
 ## LEFT OFF
-* added first js, tidied footer
+* added panels
 
 ## NEXT STEPS
-* panels?
+* add more panels?
+* do mobile tweaks?

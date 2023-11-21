@@ -105,18 +105,34 @@ table {
 		}		
 
 		/* HEADINGS */
+		h1, h2, h3 {
+			padding: 0;
+			line-height: 1.1;
+		}
+		
 		h1 { 
 			font-family: 'Roboto Slab', serif; 
 			font-size: 40px; letter-spacing: 2px; font-weight: bold;
 			text-shadow: 1px 1px 1px #fff, 3px 3px 0px #999;
-			margin-bottom: .45em; line-height: 1.1;
+			margin: 0 0 20px 0;
 		}
 
 		h2 {
 			font-family: 'Roboto Slab', serif; 
 			font-size: 30px; letter-spacing: 1px; font-weight: bold;
 			text-shadow: 1px 1px 1px #fff, 3px 3px 0px #999;
-			margin: .75em 0 .15em 0; line-height: 1;
+			margin: 0 0 10px 0;
+		}
+		
+		h3 {
+			font-family: 'Roboto Slab', serif;
+			font-weight: bold;
+			font-size: 100%;
+			margin: 0 0 0 0;
+		}
+		
+		h1.tight, h2.tight, h3.tight {
+			margin-bottom: 0;
 		}
 
 		/* FONT STYLES */
@@ -156,7 +172,115 @@ table {
 		/* font styling  */
 		.note			{ font-size: 82%; line-height: 1.1; font-style:oblique;  }
 
+		.oswald 	{ font-family: 'Oswald', sans-serif;  }
+		.verdana 	{ font-family: Verdana, Geneva, sans-serif; }
+		.roboto 	{ font-family: 'Roboto Slab', serif;  }	
+		.mono			{ font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; }	
 
+		b.o, b.r, b.m { font-weight: normal; }
+		b.o, h3.o			{ font-family: 'Oswald', sans-serif;  }
+		b.r, h3.r			{ font-family: 'Roboto Slab', serif;  }
+		b.m, h3.m			{ font-family: Courier New, Courier, Lucida Sans 	
+											Typewriter, Lucida Typewriter, monospace; }	
+											
+						b.m {font-weight: bold; }						
+						/* 	^ the Mono version *is* bolded cuz it looks better that way */
+						
+		/* DROP CAP */
+		/* 	this dropcap code was adapted from
+				https://www.newyorker.com/ */
+		div.dropcap::first-letter,
+		p.dropcap::first-letter {
+			/* font-family: TNYAdobeCaslonPro, "Times New Roman", Times, serif; */
+			font-family: 'Roboto Slab', serif;
+			letter-spacing: normal;
+			line-break: auto;
+			line-height: 75px;
+			font-size: 75px;
+			font-weight: 400;
+			overflow-wrap: normal;
+			float: left;
+			margin: -3px 0 -10px 0;
+			padding: 0px 0.05em 0px 0px;
+		}
+		
+		
+		
+		
+		
+		/* PANELS */
+		div.panel { 
+			border-top: 4px dotted #000; 
+			line-height: 1.5;
+			margin-top: 1em;
+			font-size: 130%;
+			position: relative;
+			box-sizing: border-box;
+			clear: both;
+			padding-top: .5em;
+		}
+		
+		div.panel:last-child { 
+			border-bottom: 4px dotted #000;
+			padding-bottom: 1em;
+			margin-bottom: 1em;
+		}
+		
+		div.panel div.closed { padding: 3em 2em 3em 2em; line-height: 2; }
+		div.panel div.interior { padding: 3em 2em 3em 2em; } 
+		
+		/* BUTTONS ( used in PANELS ) */
+		button {
+			margin-top: 10px;
+			background: #3498db;
+			background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+			background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+			background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+			background-image: -o-linear-gradient(top, #3498db, #2980b9);
+			background-image: linear-gradient(to bottom, #3498db, #2980b9);
+			-webkit-border-radius: 11;
+			-moz-border-radius: 11;
+			border-radius: 11px;
+			font-family: 'Roboto Slab', serif;
+			color: #ffffff;
+			font-size: 20px;
+			padding: 8px 20px 10px 20px;
+			text-decoration: none;
+			border-width: 3px;
+		}
+
+		button:hover {
+			background: #3cb0fd;
+			background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+			background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+			background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+			background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+			background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+			text-decoration: none;
+			cursor: pointer;
+		}		
+		button.greyed,
+		button.greyed:hover		{ background: #999; color: #ccc; cursor: default; }
+		
+		/* SPINNER stuff */
+		div.spinner {
+			visibility: visible;
+			width: 32px;
+			height: 32px;
+			line-height: 0;
+			position: relative;
+			top:-16px;
+			right: -1px;
+			display: inline-block;
+			width: 0px;
+		}
+
+		div.spinner.active {
+			background-image: url('../images/spinner.gif');
+			display: inline-block;
+			width: 32px;
+		}
+		
 
 
 
@@ -264,14 +388,26 @@ table {
 
 @media all and (max-width: 1200px) { 
 
+	/* MOBILE LAYOUT TWEAKS */
 	html, body { background-color: #1c567e;	}
 	
 		main { padding: 0; }
 		section { width: 100%; }
-		main section { 
-			padding: 1em;
-		}
+		main section { padding: 0; border: none; }
 
+	/* MOBILE HEADING TWEAKS */
+	h1 { 	font-size: 13vw; letter-spacing: .2vw; }
+	h2 { 	font-size: 30px; letter-spacing: normal; 
+				text-shadow: 1px 1px 1px #fff, 2px 2px 0px #999;
+	}	
+	
+	/* MOBILE PANEL TWEAKS */
+	div.panel { border-color: #72a0c1; }
+	div.panel:last-child { border-bottom-color: #72a0c1; }
+	div.panel div.closed { padding: 3.6em 0.8em 3em 0.8em; }
+	div.panel div.interior { padding: 2em 0.8em 3em 0.8em; position: relative; }
+	div.panel:not(:first-child) div.interior { padding-top: 2em; }
+	
 
 									/* CUSTOM FOOTER */
 									footer .grid { 

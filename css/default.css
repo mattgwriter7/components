@@ -228,26 +228,32 @@ table {
 		footer .grid .twitter { background-position: -91px -1187px; padding-top: 31px; }
 
 		footer .offsite_icon { position: relative; }
-		footer .offsite_icon .material-icons { right: -20px; top: 3px; position: absolute; font-size: 100%; color: #99ccff; }
+		footer .offsite_icon .material-icons { right: -20px; top: 3px; position: absolute; font-size: 100%; }
 
-		footer .contact_box {
+		footer #contact_box {
 			text-align: center;
 			font-size: 200%;
 			line-height: 1.5;
-			padding: 2em 5px 0 5px;
+			padding: 2em 5px 200px 5px;
 		}
 
-				footer .contact_box .material-icons {
+				footer #contact_box .material-icons {
 					font-size: 120%;
 					position: relative;
 					left: -1px; top: 8px; 
 				}
 				
-				footer .contact_box .material-icons.phone { 
+				footer #contact_box .material-icons.phone { 
 					rotate: 22deg; left: 5px; 
 				}
 
 		footer .grid div.note { padding-top: 3px; }
+
+		/* highlight color */
+		.hilite b, 
+		footer .offsite_icon .material-icons,
+		footer #contact_box .material-icons
+		{ color: #99ccff; }
 
 
 
@@ -273,10 +279,10 @@ table {
 										margin: .25em .5em 1em .5em;
 									}
 
-									footer .contact_box { font-size: 130%; }
-									/* 	footer .contact_box .material-icons.main { }	
-											footer .contact_box .material-icons.phone { }	*/
-									footer .contact_box .material-icons { left: -3px; top: 6px; }
+									footer #contact_box { font-size: 5vw; }
+									/* 	footer #contact_box .material-icons.main { }	
+											footer #contact_box .material-icons.phone { }	*/
+									footer #contact_box .material-icons { left: -3px; top: 6px; }
 									
 									
 }

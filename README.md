@@ -7,8 +7,7 @@ There are two markdown files:
 * NOTES.md is for longer stuff (often mentioned in this README)...
 
 ## LEFT OFF
-* finished footer
+* added first js, tidied footer
 
 ## NEXT STEPS
-* javascript for phone number?
-* add php hook (just for versions)
+* panels?

@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php 
+
+	$ver = '1c';
+
+?><!DOCTYPE html>
 <html lang="en-US" dir="ltr">
 <head>
 <title>TEMPLATE</title>
@@ -10,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">			
-<link rel="stylesheet" type="text/css" href="./css/default.css?ver=1c">
+<link rel="stylesheet" type="text/css" href="./css/default.css?ver=<?php print $ver; ?>">
 <!-- CUSTOM CSS FOR THIS PAGE -->
 <style>
 		
@@ -90,7 +94,7 @@
 		src="https://code.jquery.com/jquery-3.6.4.min.js"
 		integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
 		crossorigin="anonymous"></script>
-	<script src="./js/default.js?ver=1c"></script>	
+	<script src="./js/default.js?ver=<?php print $ver; ?>"></script>	
 	<script>
 	<!-- CUSTOM JS FOR THIS PAGE -->
 

@@ -1,11 +1,11 @@
 <?php 
 
-	$ver = '1c';
+	$ver = '1d';
 
 ?><!DOCTYPE html>
 <html lang="en-US" dir="ltr">
 <head>
-<title>TEMPLATE</title>
+<title>TEMPLATE <?php print $ver; ?></title>
 <meta name="Keywords" content="">
 <meta name="Description" content="">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -29,21 +29,80 @@
 		</section>	
 	</header>
 	
-	<main>
-		<section>
-			<h1>BRANCHES</h1>
+<main>
+		<section>		
 
-			<ol>
-				<li><b>main</b><br />
-					the latest of everything
-				</li>				
-				<li><b>starter1</b><br />
-					simple HTML and CSS, no JS
-				</li>
-				<li><b>footer</b><br />
-					the footer (see "Footer" in "NOTES.md")
-				</li>				
-			</ol>
+
+
+			<div id="INTRO" class="panel">
+				<div class="interior">
+				
+					<h1>COMPONENTS</h1>
+
+					<p>This is how this works: This is a single
+						 page	website made up of a whack of "components." 
+						 The goal is to have a repository with very clean 
+						 code I can re-use as a starting point for
+						 websites and webapps.  This is going to be
+						 99% HTML/CSS, and 1% JavaScript.
+					</p>
+			
+				</div><!-- end:interior -->
+			</div><!-- end:panel -->
+			
+			
+			
+			
+			
+
+			<div id="FONTS" class="panel">
+				
+				
+				<div class="closed">
+					Do you want to see the<br />
+					<b class="r big">FONTS</b> write-up?<br />
+					<button class="show_me" data-panel="FONTS">show me!</button>
+					<div class="spinner"><br /></div>
+					<span class="spinner_mssg"></span>					
+				</div>	
+				
+			</div><!-- end:panel -->
+
+
+
+			
+			<div id="LAYOUT" class="panel">
+				
+				<div class="closed">
+					Do you want to see the<br />
+					<b class="r big">LAYOUT</b> write-up?<br />
+					<button class="show_me" data-panel="LAYOUT">show me!</button>
+					<div class="spinner"><br /></div>
+					<span class="spinner_mssg"></span>					
+				</div>	
+				
+			</div><!-- end:panel -->
+			
+			
+			
+			
+			
+			<div id="BRANCHES" class="panel">
+				
+				<div class="closed">
+					Do you want to see the<br />
+					<b class="r big">BRANCHES</b> write-up?<br />
+					<button class="show_me" data-panel="BRANCHES">show me!</button>
+					<div class="spinner"><br /></div>
+					<span class="spinner_mssg"></span>					
+				</div>	
+				
+			</div><!-- end:panel -->			
+			
+			
+			
+			
+			
 		</section>		
 	</main>
 

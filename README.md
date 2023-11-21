@@ -7,10 +7,8 @@ There are two markdown files:
 * NOTES.md is for longer stuff (often mentioned in this README)...
 
 ## LEFT OFF
-* Making footer... 
-* Many CSS tweaks
-  + colors
-  + font sizing  
+* finished footer
 
 ## NEXT STEPS
-* get correct images happening and colors for footer
+* javascript for phone number?
+* add php hook (just for versions)

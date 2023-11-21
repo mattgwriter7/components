@@ -53,9 +53,8 @@ table {
 
 
 /* 
-		That's it for the "reset".  From here on is
-		my own code.
-		"GENERAL" stuff is used for all of my sites.
+		That's it for the "reset".  From here on is my own code:
+		"GENERAL" stuff is used for all of my sites, and
 		"CUSTOM" stuff is for a specific instances...
 */
 
@@ -144,18 +143,25 @@ table {
 
 
 /* 	=========================================
-		FONT SIZING
+		GENERAL FONT SIZING AND STYLING
 		========================================= */
 		
 		/* font sizing  */
-		.tiny 	{ font-size: 72%; }
-		.small 	{ font-size: 90%; }
-		.normal { font-size: 100%; }
-		.big 		{ font-size: 120%; letter-spacing: 1px; }
-		.huge 	{ font-size: 150%; letter-spacing: 1px; }
+		.tiny 		{ font-size: 72%; }
+		.small 		{ font-size: 90%; }
+		.normal 	{ font-size: 100%; }
+		.big 			{ font-size: 120%; letter-spacing: 1px; }
+		.huge 		{ font-size: 150%; letter-spacing: 1px; }
+
+		/* font styling  */
+		.note			{ font-size: 82%; line-height: 1.1; font-style:oblique;  }
+
+
+
+
 
 /* 	=========================================
-		COLORS
+		CUSTOM COLORS
 		========================================= */
 
 		html, body, 
@@ -185,16 +191,16 @@ table {
 		div.tag.yellow 	{ background-color: #ffe699; }		
 
 /* 	=========================================
-		FOOTER
+		CUSTOM FOOTER
 		========================================= */
+
+		footer,		
+		footer a:link, footer a:visited, footer a:hover, footer a:active { color: #fff; }
 
 		footer h3 {
 			font-family: 'Roboto Slab', serif; 
-			font-weight: bold;
+			font-weight: normal;
 		}
-
-		footer a:link, footer a:visited, footer a:hover, footer a:active { color: #000; }
-
 
 		footer .grid { 
     	column-gap: 1.5em;
@@ -203,34 +209,49 @@ table {
 			margin: .25em 1em 1.5em 0;
 		}
 
-		footer .grid .medium {
-			background-color: #999;
+		footer .grid .medium, footer .grid .github, footer .grid .reddit, 
+		footer .grid .linked, footer .grid .twitter
+		{
+			background-color: transparent;
 			min-height: 95px;
-			padding: 10px 0 0 100px;
+			padding: 10px 20px 0 100px;
 			line-height: 1.3;
-			background-image: url('../images/footer_sprite.png');
+			background-image: url('../images/footer_sprites_big.png');
 			background-repeat: no-repeat;
-			background-size: 90px;
-			background-position: 0 8px;
-		} 
-		
-		footer .contact {
+			background-size: 276px 1380px;
+			box-sizing: border-box;
+		}
+		footer .grid .medium { background-position: -91px -636px; } 
+		footer .grid .reddit { background-position: -91px -912px;  }
+		footer .grid .github { background-position: -91px -85px; padding-top: 31px; }
+		footer .grid .linked { background-position: -91px -360px; padding-top: 31px; }
+		footer .grid .twitter { background-position: -91px -1187px; padding-top: 31px; }
+
+		footer .offsite_icon { position: relative; }
+		footer .offsite_icon .material-icons { right: -20px; top: 3px; position: absolute; font-size: 100%; color: #99ccff; }
+
+		footer .contact_box {
 			text-align: center;
 			font-size: 200%;
 			line-height: 1.5;
-			padding: 0 5px;
+			padding: 2em 5px 0 5px;
 		}
 
-				footer .contact .material-icons {
+				footer .contact_box .material-icons {
 					font-size: 120%;
 					position: relative;
 					left: -1px; top: 8px; 
 				}
 				
-				footer .contact .material-icons.phone { 
+				footer .contact_box .material-icons.phone { 
 					rotate: 22deg; left: 5px; 
 				}
-		
+
+		footer .grid div.note { padding-top: 3px; }
+
+
+
+
 /* 	=========================================
 		MOBILE AND NARROW DEVICES
 		========================================= */
@@ -246,13 +267,17 @@ table {
 		}
 
 
-		footer .grid { 
-			grid-template-columns: 1fr;
-			margin: 0 .5em 1em .5em;
-		}
-		
-		footer .grid .medium {
-			min-height: 95px;
-		}	
+									/* CUSTOM FOOTER */
+									footer .grid { 
+										grid-template-columns: 1fr;
+										margin: .25em .5em 1em .5em;
+									}
+
+									footer .contact_box { font-size: 130%; }
+									/* 	footer .contact_box .material-icons.main { }	
+											footer .contact_box .material-icons.phone { }	*/
+									footer .contact_box .material-icons { left: -3px; top: 6px; }
+									
+									
 }
 

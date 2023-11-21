@@ -1,0 +1,117 @@
+/* 
+		http://meyerweb.com/eric/tools/css/reset/ 
+		v2.0 | 20110126
+		License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/* 
+		That's it for the "reset".  From here on is
+		my own code.
+		"GENERAL" stuff is used for all of my sites.
+		"CUSTOM" stuff is for a specific instances...
+*/
+
+
+		
+		
+/* 	=========================================
+		GENERAL COMMON SELECTORS
+		========================================= */
+
+		html, body {
+			position: relative;
+			height: 100%;
+			font-family: Verdana, Geneva, sans-serif;
+			font-size: 16px;
+			position: relative;
+		}
+				
+		main { padding: 1.5em 0;  }
+		
+		/* 	sections are for centering header, footer, 
+				and main content */
+		section {
+			width: 1200px;
+			margin: 0 auto;
+			position: relative;
+		}
+
+		main section {
+			background-color: #fff;
+			border: 1.5em solid transparent;
+			box-sizing: border-box;
+			overflow: hidden;
+			position: relative;
+			clear: both;
+		}
+
+		
+		header { 
+			background-color: #1c567e; 
+			padding: 2em 0 2.5em 0;
+		}
+		
+		footer { 
+			padding: 0; 
+			min-height: 770px;
+		}		
+		
+/* 	=========================================
+		MOBILE AND NARROW DEVICES
+		========================================= */
+
+@media all and (max-width: 1190px) { 
+
+	html, body { background-color: #1c567e;	}
+	
+	
+}
+

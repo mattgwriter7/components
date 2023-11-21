@@ -67,30 +67,35 @@ table {
 		========================================= */
 
 		html, body {
-			position: relative;
-			height: 100%;
+			background-color: #1c567e;
 			font-family: Verdana, Geneva, sans-serif;
 			font-size: 16px;
+			height: 100%;
+			overflow-x: hidden;
 			position: relative;
 		}
 				
-		main { padding: 1.5em 0;  }
+		main { 
+			background-color: #ccc;
+			padding: 1.5em 0;  
+		}
 		
 		/* 	sections are for centering header, footer, 
 				and main content */
 		section {
-			width: 1200px;
 			margin: 0 auto;
 			position: relative;
+			width: 1200px;
 		}
 
 		main section {
-			background-color: #fff;
+			background-color: #fff;						
 			border: 1.5em solid transparent;
 			box-sizing: border-box;
+			clear: both;
+			min-height: 300px;
 			overflow: hidden;
 			position: relative;
-			clear: both;
 		}
 
 		
@@ -100,18 +105,22 @@ table {
 		}
 		
 		footer { 
-			padding: 0; 
+			background-color: #1c567e;
 			min-height: 770px;
+			padding: 0; 
 		}		
 		
 /* 	=========================================
 		MOBILE AND NARROW DEVICES
 		========================================= */
 
-@media all and (max-width: 1190px) { 
+@media all and (max-width: 1200px) { 
 
 	html, body { background-color: #1c567e;	}
 	
+		main { padding: 0; }
+		section { width: 100%; }
+		main section { border: none; }
 	
 }
 

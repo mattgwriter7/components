@@ -1,6 +1,6 @@
 <?php 
 
-	$ver = '1d';
+	$ver = '1G';
 
 ?><!DOCTYPE html>
 <html lang="en-US" dir="ltr">
@@ -29,7 +29,7 @@
 		</section>	
 	</header>
 	
-<main>
+	<main>
 		<section>		
 
 
@@ -37,7 +37,7 @@
 			<div id="INTRO" class="panel">
 				<div class="interior">
 				
-					<h1>COMPONENTS</h1>
+					<h1>INTRO</h1>
 
 					<p>This is how this works: This is a single
 						 page	website made up of a whack of "components." 
@@ -45,6 +45,11 @@
 						 code I can re-use as a starting point for
 						 websites and webapps.  This is going to be
 						 99% HTML/CSS, and 1% JavaScript.
+					</p>
+					
+					<p>
+						<a href="./">Reload this page</a>
+						<span class="material-icons" data-top-left="-5x6">&#xe5d5;</span>
 					</p>
 			
 				</div><!-- end:interior -->
@@ -66,6 +71,52 @@
 					<span class="spinner_mssg"></span>					
 				</div>	
 				
+			</div><!-- end:panel -->
+
+
+
+			
+			
+			
+			<div id="GRIDS" class="panel">
+				
+				<div class="closed">
+					Do you want to see the<br />
+					<b class="r big">GRIDS</b> write-up?<br />
+					<button class="show_me" data-panel="GRIDS">show me!</button>
+					<div class="spinner"><br /></div>
+					<span class="spinner_mssg"></span>					
+				</div>	
+				
+			</div><!-- end:panel -->
+
+
+
+			<div id="STICKIES" class="panel">
+
+				<div class="closed">
+					Do you want to see the<br />
+					<b class="r big">STICKIES</b> write-up?<br />
+					<button class="show_me" data-panel="STICKIES">show me!</button>
+					<div class="spinner"><br /></div>
+					<span class="spinner_mssg"></span>					
+				</div>	
+
+			</div><!-- end:panel -->
+
+
+
+
+			<div id="ASIDES" class="panel">
+			
+				<div class="closed">
+					Do you want to see the<br />
+					<b class="r big">ASIDES</b> write-up?<br />
+					<button class="show_me" data-panel="ASIDES">show me!</button>
+					<div class="spinner"><br /></div>
+					<span class="spinner_mssg"></span>					
+				</div>	
+			
 			</div><!-- end:panel -->
 
 
@@ -128,7 +179,7 @@
 				</div>
 				<div class="linked">
 					<h3>LinkedIn</h3>
-					<nobr class="offsite_icon"><a href="https://www.linkedin.com/in/matt-garvin-b24938/" target="_blank">linkedin.com/in/matt-g...</a><span class="material-icons">&#xe89e;</span></nobr><br />
+					<nobr class="offsite_icon"><a href="https://www.linkedin.com/in/matt-garvin-b24938/" target="_blank"><span class="desktop">linkedin.com/in/matt-garvin-b24938</span><span class="mobile">linkedin.com/in/matt-ga...</span></a><span class="material-icons">&#xe89e;</span></nobr><br />
 				</div>			
 				<div class="twitter">
 					<h3>Twitter</h3>

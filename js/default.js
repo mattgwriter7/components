@@ -6,8 +6,9 @@ $(function() {
 
 	
 	function init() {
-		
-		//	thward any bots trying to harvest my contact info
+
+		positionBottomRightItems();
+		positionTopLeftItems();
 		thwartEmailBots();
 
 		return;
@@ -22,6 +23,40 @@ $(function() {
 		return;
 	}
 
+	//	grabs co-ordinates of objects using something like:
+	//		data-bottom-right="10x10"
+	//	positions them accordingly
+	function positionBottomRightItems() {
+		$.each( $('[data-bottom-right]'), function (index) {
+			let str = $(this).attr('data-bottom-right'),
+					arr = str.split('x'),
+					x = arr[0].toString() + 'px',
+					y = arr[1].toString() + 'px';
+			console.log( 'positionBottomRightItems() at ' + x + ' by ' + y );
+			//	add relative positioning and X and Y co-ords
+			$( this ).css( 'position', 'relative' ); 
+			$( this ).css( 'right', x ); 
+			$( this ).css( 'bottom', y ); 
+			$( this ).fadeIn();		// assume the are hidden to start
+		});
+		return;
+	}
+
+	function positionTopLeftItems() {
+		$.each( $('[data-top-left]'), function (index) {
+			let str = $(this).attr('data-top-left'),
+					arr = str.split('x'),
+					x = arr[0].toString() + 'px',
+					y = arr[1].toString() + 'px';
+			console.log( 'positionTopLeftItems() at ' + x + ' by ' + y );
+			//	add relative positioning and X and Y co-ords
+			$( this ).css( 'position', 'relative' ); 
+			$( this ).css( 'left', x ); 
+			$( this ).css( 'top', y ); 
+			$( this ).fadeIn();		// assume the are hidden to start
+		});
+		return;
+	}		
 	// 	===========================================	
 	//	EVENT HANDLERS (non-delegated)
 	// 	===========================================	
@@ -49,6 +84,15 @@ $(function() {
 			});			
 		}, 2000);		
 	});
+	
+	// 	===========================================	
+	//	EVENT HANDLERS (delegated)
+	// 	===========================================	
+
+	//	click Stickies to hide		
+	$('body').on('click', '.sticky',function( event ) {
+		$( this ).fadeOut();
+	});	
 	
 	// 	===========================================	
 	//	INIT

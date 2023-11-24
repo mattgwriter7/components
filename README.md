@@ -1,4 +1,4 @@
-# components
+# components version 1.01.h
 This is the starter HTML/CSS code for my projects
 
 There are two markdown files:  
@@ -6,10 +6,10 @@ There are two markdown files:
   This should be short and concise!
 * NOTES.md is for longer stuff (often mentioned in this README)...
 
-## LEFT OFF
-* added more panels
+## LEFT OFF 
+* added tags panels
 
 ## NEXT STEPS
 * add more panels?
-  + tags, layout
+  + layout
 * check in mobile tweaks?

@@ -1,6 +1,6 @@
 <?php 
 
-	$ver = '1G';
+	$ver = '1H';
 
 ?><!DOCTYPE html>
 <html lang="en-US" dir="ltr">
@@ -33,7 +33,7 @@
 		<section>		
 
 
-
+			<a name="INTRO" /></a>	
 			<div id="INTRO" class="panel">
 				<div class="interior">
 				
@@ -51,6 +51,17 @@
 						<a href="./">Reload this page</a>
 						<span class="material-icons" data-top-left="-5x6">&#xe5d5;</span>
 					</p>
+					
+					<h3>Components</h3>
+					<p>
+						<a href="#ASIDES">Asides</a>,
+						<a href="#BRANCHES">Branches</a>,
+						<a href="#FONTS">Fonts</a>, 
+						<a href="#GRIDS">Grids</a>, 
+						<a href="#LAYOUT">Layout</a>,
+						<a href="#STICKIES">Stickies</a>, 
+						<a href="#TAGS">Tags</a>
+					</p>
 			
 				</div><!-- end:interior -->
 			</div><!-- end:panel -->
@@ -59,9 +70,8 @@
 			
 			
 			
-
+			<a name="FONTS" /></a>
 			<div id="FONTS" class="panel">
-				
 				
 				<div class="closed">
 					Do you want to see the<br />
@@ -77,7 +87,7 @@
 
 			
 			
-			
+			<a name="GRIDS" /></a>
 			<div id="GRIDS" class="panel">
 				
 				<div class="closed">
@@ -92,6 +102,8 @@
 
 
 
+
+			<a name="STICKIES" /></a>	
 			<div id="STICKIES" class="panel">
 
 				<div class="closed">
@@ -106,7 +118,7 @@
 
 
 
-
+			<a name="ASIDES" /></a>
 			<div id="ASIDES" class="panel">
 			
 				<div class="closed">
@@ -121,7 +133,7 @@
 
 
 
-			
+			<a name="LAYOUT" /></a>
 			<div id="LAYOUT" class="panel">
 				
 				<div class="closed">
@@ -135,9 +147,23 @@
 			</div><!-- end:panel -->
 			
 			
+
+
+			<a name="TAGS" /></a>
+			<div id="TAGS" class="panel">
+				
+				<div class="closed">
+					Do you want to see the<br />
+					<b class="r big">TAGS</b> write-up?<br />
+					<button class="show_me" data-panel="TAGS">show me!</button>
+					<div class="spinner"><br /></div>
+					<span class="spinner_mssg"></span>					
+				</div>	
+				
+			</div><!-- end:panel -->
 			
 			
-			
+			<a name="BRANCHES" /></a>
 			<div id="BRANCHES" class="panel">
 				
 				<div class="closed">

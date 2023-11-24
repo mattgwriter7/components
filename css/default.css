@@ -178,19 +178,19 @@ table {
 		.huge 		{ font-size: 150%; letter-spacing: 1px; }
 
 		/* font styling  */
-		.oswald 	{ font-family: 'Oswald', sans-serif;  }
-		.verdana 	{ font-family: Verdana, Geneva, sans-serif; }
-		.roboto 	{ font-family: 'Roboto Slab', serif;  }	
-		.mono			{ font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; }	
+		.o, .oswald 	{ font-family: 'Oswald', sans-serif;  }
+		.v, .verdana 	{ font-family: Verdana, Geneva, sans-serif; }
+		.r, .roboto 	{ font-family: 'Roboto Slab', serif;  }	
+		.m, .mono			{ font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; }
 
 		b.o, b.r, b.m { font-weight: normal; }
-		b.o, h3.o			{ font-family: 'Oswald', sans-serif;  }
-		b.r, h3.r			{ font-family: 'Roboto Slab', serif;  }
-		b.m, h3.m			{ font-family: Courier New, Courier, Lucida Sans 	
+		b.o 					{ font-family: 'Oswald', sans-serif;  }
+		b.r 					{ font-family: 'Roboto Slab', serif;  }
+		b.m 					{ font-family: Courier New, Courier, Lucida Sans 	
 											Typewriter, Lucida Typewriter, monospace; }	
 											
-						b.m {font-weight: bold; }						
-						/* 	^ the Mono version *is* bolded cuz it looks better that way */
+						.m, b.m {font-weight: bold; }						
+						/* 	^ the Mono versions are bolded cuz it looks better that way */
 						
 		/* DROP CAP */
 		/* 	this dropcap code was adapted from

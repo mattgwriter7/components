@@ -1,18 +1,23 @@
 $(function() {
 	
+	let JS = {};
+			JS.ver = '1.1';
+	
 	// 	===========================================	
 	//	MAIN FUNCTIONS
 	// 	===========================================		
 
-	
 	function init() {
 
+		console.log( 'init() with JS version ' + JS.ver );
 		positionBottomRightItems();
 		positionTopLeftItems();
 		thwartEmailBots();
 
 		return;
 	}
+
+	//	--------------------------------------------
 
 	//	thwartEmailBots() replaces any "***" with "416" in 
 	//	#contact_box of my footer.
@@ -22,6 +27,8 @@ $(function() {
 		$( '#contact_box').html(my_new_string);
 		return;
 	}
+
+	//	--------------------------------------------
 
 	//	grabs co-ordinates of objects using something like:
 	//		data-bottom-right="10x10"

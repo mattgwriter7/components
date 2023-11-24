@@ -1,15 +1,10 @@
-# components version 1.01.h
-This is the starter HTML/CSS code for my projects
+# Components 
+This is the starter HTML/CSS code for my projects.
 
-There are two markdown files:  
-* README.md is for where we left off at, and what to do next.  
-  This should be short and concise!
-* NOTES.md is for longer stuff (often mentioned in this README)...
+## How It Works
+"Components" is a single page website made up of... components!  My  goal is to have a repository with very clean code that I can re-use as a starting point for my websites and webapps.  
 
-## LEFT OFF 
-* added tags panels
+This project is 99% HTML/CSS, and 1% JavaScript.
 
-## NEXT STEPS
-* add more panels?
-  + layout
-* check in mobile tweaks?
+See [NOTES](https://github.com/mattgwriter7/components/NOTES.md) for some "Plain English" information.  Run the HTML to see the page in action.
+

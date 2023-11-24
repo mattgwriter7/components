@@ -131,9 +131,14 @@ table {
 			margin: 0 0 0 0;
 		}
 		
+		h1.short, h2.short, h3.short,
 		h1.tight, h2.tight, h3.tight {
 			margin-bottom: 0;
 		}
+		
+		h1.tall, h2.tall, h3.tall {
+			margin: 0 0 20px 0;
+		}			
 		
 		pre { -moz-tab-size: 2; }
 		pre { tab-size: 2; }
@@ -404,6 +409,36 @@ table {
 		div.tag.yellow 	{ background-color: #ffe699; }		
 
 /* 	=========================================
+		CUSTOM HEADER
+		========================================= */
+
+		header h1 {
+			font-size: 85px;
+			font-family: 'Oswald', sans-serif;
+			color: #fff;
+			letter-spacing: 1px;
+			font-weight: bold;
+			text-shadow: 1px 1px 1px #000, 3px 3px 0px #999;
+			display: inline-block;
+			box-sizing: border-box;			
+			line-height: 1.0;
+			margin: 12px 0 12px 0;
+		}	
+
+/* 	=========================================
+		CUSTOM HERO
+		========================================= */
+		
+		div#hero {
+			background-color: #fff;
+			height: 200px;
+			background-image: url('../images/hero_background.jpg');
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;		
+		}
+		
+/* 	=========================================
 		CUSTOM FOOTER
 		========================================= */
 
@@ -545,10 +580,17 @@ table {
 					/* END OF MOBILE ASIDE STYLES */
 					
 					
+									/* MOBILE HEADER AND HERO */
+									header {}										
 					
+									header h1 {
+										font-size: 40px;
+										margin: 1px 0 1px 20px;
+									}	
+
+									div#hero { height: 110px }		
 					
-					
-									/* CUSTOM FOOTER */
+									/* MOBILE FOOTER */
 									footer .grid { 
 										grid-template-columns: 1fr;
 										margin: .25em .5em 1em .5em;

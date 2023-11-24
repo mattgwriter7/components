@@ -1,8 +1,5 @@
 $(function() {
 	
-	let JS = {};
-			JS.ver = '1.1';
-	
 	// 	===========================================	
 	//	MAIN FUNCTIONS
 	// 	===========================================		
@@ -10,6 +7,9 @@ $(function() {
 	function init() {
 
 		console.log( 'init() with JS version ' + JS.ver );
+		
+		//	prep stuff
+		addPanelSpinners();
 		positionBottomRightItems();
 		positionTopLeftItems();
 		thwartEmailBots();
@@ -17,6 +17,18 @@ $(function() {
 		return;
 	}
 
+	//	--------------------------------------------
+
+	//	addPanelSpinners()
+	//	this function looks for "closed panels" and
+	//	when found it adds an HTML/CSS spinner
+	//	(which animates when panels get opened)
+	function addPanelSpinners() {
+		console.log( 'addPanelSpinners()' );
+		$( '.panel .closed' ).append('<div class="spinner"><br /></div>&nbsp;<span class="spinner_mssg"></span>');
+		return;
+	}
+	
 	//	--------------------------------------------
 
 	//	thwartEmailBots() replaces any "***" with "416" in 
@@ -30,7 +42,8 @@ $(function() {
 
 	//	--------------------------------------------
 
-	//	grabs co-ordinates of objects using something like:
+	//	positionBottomRightItems() grabs
+	//	co-ordinates of objects using something like:
 	//		data-bottom-right="10x10"
 	//	positions them accordingly
 	function positionBottomRightItems() {

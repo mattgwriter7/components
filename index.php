@@ -1,11 +1,15 @@
 <?php 
-
-	$ver = '1H';
+	
+	//	COMPONENTS
+	//	The PHP is very small for this project.
+	//	It amounts to the version number, and
+	//	some include files.
+	$ver = '1M';	// version number
 
 ?><!DOCTYPE html>
 <html lang="en-US" dir="ltr">
 <head>
-<title>TEMPLATE <?php print $ver; ?></title>
+<title>COMPONENTS <?php print $ver; ?></title>
 <meta name="Keywords" content="">
 <meta name="Description" content="">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -25,9 +29,13 @@
 
 	<header>
 		<section>
-			HEADER
+			<h1>COMPONENTS</h1>
 		</section>	
 	</header>
+	
+	<div id="hero">
+		
+	</div>
 	
 	<main>
 		<section>		
@@ -40,10 +48,13 @@
 					<h1>INTRO</h1>
 
 					<p>This is how this works: This is a single
-						 page	website made up of a whack of "components." 
+						 page	website made up of a whack of 
+						 "<b class="o">COMPONENTS</b>".
 						 The goal is to have a repository with very clean 
-						 code I can re-use as a starting point for
-						 websites and webapps.  This is going to be
+						 code that can be re-used as a starting point for
+						 websites and webapps, just plopping in 
+						 <b class="o">COMPONENTS</b> as 
+						 needed.  This is going to be
 						 99% HTML/CSS, and 1% JavaScript.
 					</p>
 					
@@ -55,9 +66,11 @@
 					<h3>Components</h3>
 					<p>
 						<a href="#ASIDES">Asides</a>,
-						<a href="#BRANCHES">Branches</a>,
 						<a href="#FONTS">Fonts</a>, 
+						<a href="#HEADERS">Footers</a>,
 						<a href="#GRIDS">Grids</a>, 
+						<a href="#HEADERS">Headers</a>,
+						<a href="#HEADERS">Heros</a>,
 						<a href="#LAYOUT">Layout</a>,
 						<a href="#STICKIES">Stickies</a>, 
 						<a href="#TAGS">Tags</a>
@@ -77,8 +90,6 @@
 					Do you want to see the<br />
 					<b class="r big">FONTS</b> write-up?<br />
 					<button class="show_me" data-panel="FONTS">show me!</button>
-					<div class="spinner"><br /></div>
-					<span class="spinner_mssg"></span>					
 				</div>	
 				
 			</div><!-- end:panel -->
@@ -93,9 +104,7 @@
 				<div class="closed">
 					Do you want to see the<br />
 					<b class="r big">GRIDS</b> write-up?<br />
-					<button class="show_me" data-panel="GRIDS">show me!</button>
-					<div class="spinner"><br /></div>
-					<span class="spinner_mssg"></span>					
+					<button class="show_me" data-panel="GRIDS">show me!</button>				
 				</div>	
 				
 			</div><!-- end:panel -->
@@ -110,8 +119,6 @@
 					Do you want to see the<br />
 					<b class="r big">STICKIES</b> write-up?<br />
 					<button class="show_me" data-panel="STICKIES">show me!</button>
-					<div class="spinner"><br /></div>
-					<span class="spinner_mssg"></span>					
 				</div>	
 
 			</div><!-- end:panel -->
@@ -125,8 +132,6 @@
 					Do you want to see the<br />
 					<b class="r big">ASIDES</b> write-up?<br />
 					<button class="show_me" data-panel="ASIDES">show me!</button>
-					<div class="spinner"><br /></div>
-					<span class="spinner_mssg"></span>					
 				</div>	
 			
 			</div><!-- end:panel -->
@@ -140,8 +145,6 @@
 					Do you want to see the<br />
 					<b class="r big">LAYOUT</b> write-up?<br />
 					<button class="show_me" data-panel="LAYOUT">show me!</button>
-					<div class="spinner"><br /></div>
-					<span class="spinner_mssg"></span>					
 				</div>	
 				
 			</div><!-- end:panel -->
@@ -156,27 +159,21 @@
 					Do you want to see the<br />
 					<b class="r big">TAGS</b> write-up?<br />
 					<button class="show_me" data-panel="TAGS">show me!</button>
-					<div class="spinner"><br /></div>
-					<span class="spinner_mssg"></span>					
 				</div>	
 				
 			</div><!-- end:panel -->
 			
 			
-			<a name="BRANCHES" /></a>
-			<div id="BRANCHES" class="panel">
-				
+			<a name="HEADERS" /></a>
+			<div id="HEADERS" class="panel">
+
 				<div class="closed">
 					Do you want to see the<br />
-					<b class="r big">BRANCHES</b> write-up?<br />
-					<button class="show_me" data-panel="BRANCHES">show me!</button>
-					<div class="spinner"><br /></div>
-					<span class="spinner_mssg"></span>					
+					<b class="r big">HEADERS</b> write-up?<br />
+					<button class="show_me" data-panel="HEADERS">show me!</button>
 				</div>	
-				
+
 			</div><!-- end:panel -->			
-			
-			
 			
 			
 			
@@ -230,10 +227,15 @@
 		src="https://code.jquery.com/jquery-3.6.4.min.js"
 		integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
 		crossorigin="anonymous"></script>
-	<script src="./js/default.js?ver=<?php print $ver; ?>"></script>	
 	<script>
+	//	make a JavaScript object called JS
+	//	( which gets used by default.js )
+	let JS = {}
+			JS.ver = '<?php print $ver; ?>';
+	</script>			
+	<script src="./js/default.js?ver=<?php print $ver; ?>"></script>	
 	<!-- CUSTOM JS FOR THIS PAGE -->
-
+	<script>
 
 	</script>	
 </body>

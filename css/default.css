@@ -183,10 +183,10 @@ table {
 		.huge 		{ font-size: 150%; letter-spacing: 1px; }
 
 		/* font styling  */
-		.o, .oswald 	{ font-family: 'Oswald', sans-serif;  }
-		.v, .verdana 	{ font-family: Verdana, Geneva, sans-serif; }
-		.r, .roboto 	{ font-family: 'Roboto Slab', serif;  }	
-		.m, .mono			{ font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; }
+		.o, .oswald 		{ font-family: 'Oswald', sans-serif;  }
+		.v, .verdana 		{ font-family: Verdana, Geneva, sans-serif; }
+		.r, .roboto 		{ font-family: 'Roboto Slab', serif;  }	
+		.m, .mono, pre 	{ font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; }
 
 		b.o, b.r, b.m { font-weight: normal; }
 		b.o 					{ font-family: 'Oswald', sans-serif;  }
@@ -197,6 +197,10 @@ table {
 						.m, b.m {font-weight: bold; }						
 						/* 	^ the Mono versions are bolded cuz it looks better that way */
 						
+						.code { font-family: Courier New, Courier, Lucida Sans 	
+								Typewriter, Lucida Typewriter, monospace; 
+							font-weight: bold; padding-left: 1em;
+						}
 		/* DROP CAP */
 		/* 	this dropcap code was adapted from
 				https://www.newyorker.com/ */
@@ -425,6 +429,13 @@ table {
 			margin: 12px 0 12px 0;
 		}	
 
+		header h3 {
+			color: #fff;
+			font-weight: normal;
+			margin: 7px 0 15px 5px;
+			font-size: 25px;
+		}
+
 /* 	=========================================
 		CUSTOM HERO
 		========================================= */
@@ -507,8 +518,20 @@ table {
 
 
 
-
-
+/* 	=========================================
+		LITTLE TOUCHES
+		========================================= */
+		
+		ol.touchup1 {
+			margin: 0 0 1.5em 3em;	
+		}
+		
+		ol.touchup1 li::marker {
+			font-family: 'Roboto Slab', serif;
+			font-size: 150%;
+			font-weight: bold;
+			text-shadow: 1px 1px 1px #fff, 2px 2px 0px #999;
+		}	
 
 
 /* 	=========================================
@@ -583,10 +606,9 @@ table {
 									/* MOBILE HEADER AND HERO */
 									header {}										
 					
-									header h1 {
-										font-size: 40px;
-										margin: 1px 0 1px 20px;
-									}	
+									header h1 { font-size: 40px; margin: 1px 0 1px 20px; }	
+
+									header h3 { margin: 7px 0 0 20px; font-size: 16px; }									
 
 									div#hero { height: 110px }		
 					

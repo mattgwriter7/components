@@ -6,5 +6,7 @@ This is the starter HTML/CSS code for my projects.
 
 This project is 99% HTML/CSS, and 1% JavaScript.
 
-See [NOTES](https://github.com/mattgwriter7/components/blob/main/NOTES.md) for some "Plain English" information.  Run the HTML to see the page in action.
+See [NOTES](https://github.com/mattgwriter7/components/blob/main/NOTES.md) for some "Plain English" information.  
+
+Run this [DEMO](https://bestremoteworker.com/demos/components) to see this codein action.
 

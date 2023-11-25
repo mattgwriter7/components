@@ -1,0 +1,29 @@
+/* 
+		custom.css
+		
+		That's it for the "reset".  From here on is my own code:
+		"GENERAL" stuff is used for all of my sites, and
+		"CUSTOM" stuff is for a specific instances...
+*/
+
+
+		
+		
+/* 	=========================================
+		GENERAL COMMON SELECTORS
+		========================================= */
+
+		/*	( empty ) */
+
+/* 	=========================================
+		MOBILE AND NARROW DEVICES
+		========================================= */
+
+@media all and (max-width: 1200px) { 
+
+		/*	( empty ) */
+
+}
+
+
+

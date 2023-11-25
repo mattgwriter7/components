@@ -4,7 +4,7 @@
 	//	The PHP is very small for this project.
 	//	It amounts to the version number, and
 	//	some include files.
-	$ver = '1M';	// version number
+	$ver = '1N';	// version number
 
 ?><!DOCTYPE html>
 <html lang="en-US" dir="ltr">
@@ -19,6 +19,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">			
 <link rel="stylesheet" type="text/css" href="./css/default.css?ver=<?php print $ver; ?>">
+<link rel="stylesheet" type="text/css" href="./css/custom.css?ver=<?php print $ver; ?>">
 <!-- CUSTOM CSS FOR THIS PAGE -->
 <style>
 		
@@ -30,6 +31,7 @@
 	<header>
 		<section>
 			<h1>COMPONENTS</h1>
+			<h3>A Whack of Boilerplate HTML/CSS</h3>
 		</section>	
 	</header>
 	
@@ -47,7 +49,7 @@
 				
 					<h1>INTRO</h1>
 
-					<p>This is how this works: This is a single
+					<p>This is a single
 						 page	website made up of a whack of 
 						 "<b class="o">COMPONENTS</b>".
 						 The goal is to have a repository with very clean 
@@ -72,6 +74,7 @@
 						<a href="#HEADERS">Headers</a>,
 						<a href="#HEADERS">Heros</a>,
 						<a href="#LAYOUT">Layout</a>,
+						<a href="#TOUCHES">Little Touches</a>
 						<a href="#STICKIES">Stickies</a>, 
 						<a href="#TAGS">Tags</a>
 					</p>
@@ -176,6 +179,20 @@
 			</div><!-- end:panel -->			
 			
 			
+
+			<a name="TOUCHES" /></a>
+			<div id="TOUCHES" class="panel">
+
+				<div class="closed">
+					Do you want to see the<br />
+					<b class="r big">LITTLE TOUCHES</b> write-up?<br />
+					<button class="show_me" data-panel="TOUCHES">show me!</button>
+				</div>	
+				
+			</div><!-- end:panel -->
+
+
+
 			
 		</section>		
 	</main>
@@ -233,8 +250,9 @@
 	let JS = {}
 			JS.ver = '<?php print $ver; ?>';
 	</script>			
-	<script src="./js/default.js?ver=<?php print $ver; ?>"></script>	
-	<!-- CUSTOM JS FOR THIS PAGE -->
+	<script src="./js/default.js?ver=<?php print $ver; ?>"></script>
+	<script src="./js/custom.js?ver=<?php print $ver; ?>"></script>	
+	<!-- CUSTOM ON-PAGE JS FOR THIS PAGE -->
 	<script>
 
 	</script>	
